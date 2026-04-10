@@ -27,9 +27,9 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  0000c0b8  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00029a63  00000000  00000000  0000c0e8  2**0
+ 12 .debug_info   00029a61  00000000  00000000  0000c0e8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00005b3a  00000000  00000000  00035b4b  2**0
+ 13 .debug_abbrev 00005b3b  00000000  00000000  00035b49  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  14 .debug_aranges 000022d0  00000000  00000000  0003b688  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
@@ -37,15 +37,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  000324d7  00000000  00000000  0003f465  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0002c573  00000000  00000000  0007193c  2**0
+ 17 .debug_line   0002c565  00000000  00000000  0007193c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0010c879  00000000  00000000  0009deaf  2**0
+ 18 .debug_str    0010c879  00000000  00000000  0009dea1  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  001aa728  2**0
+ 19 .comment      00000043  00000000  00000000  001aa71a  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00009ac4  00000000  00000000  001aa76c  2**2
+ 20 .debug_frame  00009ac4  00000000  00000000  001aa760  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000069  00000000  00000000  001b4230  2**0
+ 21 .debug_line_str 00000069  00000000  00000000  001b4224  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -2823,10 +2823,10 @@ char Keypad::GetKey(void) {
  800144c:	0800a8c0 	.word	0x0800a8c0
 
 08001450 <_ZN3LCDC1EP19__I2C_HandleTypeDefh>:
-#define LCD_FUNCTION_SET           0x28 // 4-bit mode, 2 lines, 5x8 dots
+#define LCD_FUNCTION_SET           0x28
 #define LCD_BACKLIGHT              0x08
-#define LCD_EN                     0x04 // Enable bit
-#define LCD_RS                     0x01 // Register Select bit
+#define LCD_EN                     0x04
+#define LCD_RS                     0x01
 
 LCD::LCD(I2C_HandleTypeDef* h, uint8_t address){
  8001450:	b480      	push	{r7}
@@ -2930,14 +2930,12 @@ void LCD::Init() {
  80014f8:	b086      	sub	sp, #24
  80014fa:	af02      	add	r7, sp, #8
  80014fc:	6078      	str	r0, [r7, #4]
-    HAL_Delay(50);  // чекаємо поки дисплей стартує
+    HAL_Delay(50);
  80014fe:	2032      	movs	r0, #50	@ 0x32
  8001500:	f001 fcb8 	bl	8002e74 <HAL_Delay>
-    // Reset послідовність — ОБОВ'ЯЗКОВО тричі 0x30 в верхньому нібблі
-    // Але в 4-бітному режимі надсилаємо тільки верхній нібл!
+
     uint8_t init_seq[4];
 
-    // Крок 1: надсилаємо 0x3 (верхній нібл) — перший раз
     init_seq[0] = 0x30 | LCD_BACKLIGHT | LCD_EN;
  8001504:	233c      	movs	r3, #60	@ 0x3c
  8001506:	733b      	strb	r3, [r7, #12]
@@ -2959,7 +2957,6 @@ void LCD::Init() {
  8001524:	2005      	movs	r0, #5
  8001526:	f001 fca5 	bl	8002e74 <HAL_Delay>
 
-    // Крок 2: другий раз
     HAL_I2C_Master_Transmit(hi2c, addr, init_seq, 2, 100);
  800152a:	687b      	ldr	r3, [r7, #4]
  800152c:	6818      	ldr	r0, [r3, #0]
@@ -2975,7 +2972,6 @@ void LCD::Init() {
  8001542:	2001      	movs	r0, #1
  8001544:	f001 fc96 	bl	8002e74 <HAL_Delay>
 
-    // Крок 3: третій раз
     HAL_I2C_Master_Transmit(hi2c, addr, init_seq, 2, 100);
  8001548:	687b      	ldr	r3, [r7, #4]
  800154a:	6818      	ldr	r0, [r3, #0]
@@ -2991,7 +2987,6 @@ void LCD::Init() {
  8001560:	2001      	movs	r0, #1
  8001562:	f001 fc87 	bl	8002e74 <HAL_Delay>
 
-    // Крок 4: переходимо на 4-бітний режим (надсилаємо 0x2)
     init_seq[0] = 0x20 | LCD_BACKLIGHT | LCD_EN;
  8001566:	232c      	movs	r3, #44	@ 0x2c
  8001568:	733b      	strb	r3, [r7, #12]
@@ -3013,8 +3008,7 @@ void LCD::Init() {
  8001586:	2001      	movs	r0, #1
  8001588:	f001 fc74 	bl	8002e74 <HAL_Delay>
 
-    // Далі вже повні команди через WriteByte (обидва нібли):
-    WriteByte(LCD_FUNCTION_SET, 0);   // 4-bit, 2 lines, 5x8
+    WriteByte(LCD_FUNCTION_SET, 0);
  800158c:	2200      	movs	r2, #0
  800158e:	2128      	movs	r1, #40	@ 0x28
  8001590:	6878      	ldr	r0, [r7, #4]
@@ -3022,7 +3016,7 @@ void LCD::Init() {
     HAL_Delay(1);
  8001596:	2001      	movs	r0, #1
  8001598:	f001 fc6c 	bl	8002e74 <HAL_Delay>
-    WriteByte(LCD_DISPLAY_CONTROL, 0); // display on, cursor off
+    WriteByte(LCD_DISPLAY_CONTROL, 0);
  800159c:	2200      	movs	r2, #0
  800159e:	210c      	movs	r1, #12
  80015a0:	6878      	ldr	r0, [r7, #4]
@@ -3035,7 +3029,7 @@ void LCD::Init() {
  80015ae:	2101      	movs	r1, #1
  80015b0:	6878      	ldr	r0, [r7, #4]
  80015b2:	f7ff ff61 	bl	8001478 <_ZN3LCD9WriteByteEhh>
-    HAL_Delay(5);                      // clear потребує більше часу!
+    HAL_Delay(5);
  80015b6:	2005      	movs	r0, #5
  80015b8:	f001 fc5c 	bl	8002e74 <HAL_Delay>
     WriteByte(LCD_ENTRY_MODE_SET, 0);
@@ -4535,11 +4529,9 @@ extern "C" void main_cpp_loop(void) {
  8001e08:	f241 0104 	movw	r1, #4100	@ 0x1004
  8001e0c:	480f      	ldr	r0, [pc, #60]	@ (8001e4c <main_cpp_loop+0x8c>)
  8001e0e:	f000 f8bb 	bl	8001f88 <_ZN5Servo9TurnShaftEm>
-//        }
-//        else if (cmd == 'R'){
-//            myServo.TurnShaft(SERVO_RIGHTPOSITION);
-//        }
-//    }
+	        else if (key == '0') myServo.TurnShaft(SERVO_MIDPOSITION);
+	        else if (key == '9') myServo.TurnShaft(SERVO_RIGHTPOSITION);
+	    }
 }
  8001e12:	e010      	b.n	8001e36 <main_cpp_loop+0x76>
 	        else if (key == '0') myServo.TurnShaft(SERVO_MIDPOSITION);

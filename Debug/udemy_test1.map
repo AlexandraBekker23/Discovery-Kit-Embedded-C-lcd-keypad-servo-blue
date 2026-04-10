@@ -8866,91 +8866,91 @@ LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.id
 LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
 LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.macos64_1.0.0.202411102158/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a
 
-.debug_info     0x00000000    0x29a63
+.debug_info     0x00000000    0x29a61
  .debug_info    0x00000000      0x5b8 ./BlueNRG_MS/App/app_bluenrg_ms.o
  .debug_info    0x000005b8     0x126e ./BlueNRG_MS/App/sample_service.o
  .debug_info    0x00001826      0xb15 ./BlueNRG_MS/Target/hci_tl_interface.o
  .debug_info    0x0000233b      0x568 ./Core/Src/keypad.o
  .debug_info    0x000028a3      0xa80 ./Core/Src/lcd.o
  .debug_info    0x00003323     0x2014 ./Core/Src/main.o
- .debug_info    0x00005337     0x19c0 ./Core/Src/main_cpp.o
- .debug_info    0x00006cf7      0x8cc ./Core/Src/servo.o
- .debug_info    0x000075c3     0x1dd6 ./Core/Src/stm32l4xx_hal_msp.o
- .debug_info    0x00009399      0x240 ./Core/Src/stm32l4xx_it.o
- .debug_info    0x000095d9      0x6a3 ./Core/Src/syscalls.o
- .debug_info    0x00009c7c      0x168 ./Core/Src/sysmem.o
- .debug_info    0x00009de4      0x5e2 ./Core/Src/system_stm32l4xx.o
- .debug_info    0x0000a3c6       0x30 ./Core/Startup/startup_stm32l475vgtx.o
- .debug_info    0x0000a3f6     0x1735 ./Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1.o
- .debug_info    0x0000bb2b      0xbf0 ./Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_bus.o
- .debug_info    0x0000c71b      0xb27 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o
- .debug_info    0x0000d242      0xda7 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o
- .debug_info    0x0000dfe9     0x1a95 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dfsdm.o
- .debug_info    0x0000fa7e      0x692 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o
- .debug_info    0x00010110      0x79f ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o
- .debug_info    0x000108af     0x20fc ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o
- .debug_info    0x000129ab      0x99f ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o
- .debug_info    0x0001334a     0x14fd ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd.o
- .debug_info    0x00014847      0x8d2 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd_ex.o
- .debug_info    0x00015119      0x94a ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o
- .debug_info    0x00015a63      0x9a6 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o
- .debug_info    0x00016409      0xc45 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o
- .debug_info    0x0001704e      0xe58 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o
- .debug_info    0x00017ea6     0x1572 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.o
- .debug_info    0x00019418     0x2ade ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o
- .debug_info    0x0001bef6     0x16e0 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o
- .debug_info    0x0001d5d6     0x3b8e ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o
- .debug_info    0x00021164     0x15ed ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.o
- .debug_info    0x00022751     0x21d4 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_gap_aci.o
- .debug_info    0x00024925     0x22d0 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_gatt_aci.o
- .debug_info    0x00026bf5      0x726 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_hal_aci.o
- .debug_info    0x0002731b      0x19a ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_utils_small.o
- .debug_info    0x000274b5     0x15d9 ./Middlewares/ST/BlueNRG-MS/hci/hci_le.o
- .debug_info    0x00028a8e      0x8c6 ./Middlewares/ST/BlueNRG-MS/hci/hci_tl_patterns/Basic/hci_tl.o
- .debug_info    0x00029354      0x70f ./Middlewares/ST/BlueNRG-MS/utils/ble_list.o
+ .debug_info    0x00005337     0x19be ./Core/Src/main_cpp.o
+ .debug_info    0x00006cf5      0x8cc ./Core/Src/servo.o
+ .debug_info    0x000075c1     0x1dd6 ./Core/Src/stm32l4xx_hal_msp.o
+ .debug_info    0x00009397      0x240 ./Core/Src/stm32l4xx_it.o
+ .debug_info    0x000095d7      0x6a3 ./Core/Src/syscalls.o
+ .debug_info    0x00009c7a      0x168 ./Core/Src/sysmem.o
+ .debug_info    0x00009de2      0x5e2 ./Core/Src/system_stm32l4xx.o
+ .debug_info    0x0000a3c4       0x30 ./Core/Startup/startup_stm32l475vgtx.o
+ .debug_info    0x0000a3f4     0x1735 ./Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1.o
+ .debug_info    0x0000bb29      0xbf0 ./Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_bus.o
+ .debug_info    0x0000c719      0xb27 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o
+ .debug_info    0x0000d240      0xda7 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o
+ .debug_info    0x0000dfe7     0x1a95 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dfsdm.o
+ .debug_info    0x0000fa7c      0x692 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o
+ .debug_info    0x0001010e      0x79f ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o
+ .debug_info    0x000108ad     0x20fc ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o
+ .debug_info    0x000129a9      0x99f ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o
+ .debug_info    0x00013348     0x14fd ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd.o
+ .debug_info    0x00014845      0x8d2 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd_ex.o
+ .debug_info    0x00015117      0x94a ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o
+ .debug_info    0x00015a61      0x9a6 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o
+ .debug_info    0x00016407      0xc45 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o
+ .debug_info    0x0001704c      0xe58 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o
+ .debug_info    0x00017ea4     0x1572 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.o
+ .debug_info    0x00019416     0x2ade ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o
+ .debug_info    0x0001bef4     0x16e0 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o
+ .debug_info    0x0001d5d4     0x3b8e ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o
+ .debug_info    0x00021162     0x15ed ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.o
+ .debug_info    0x0002274f     0x21d4 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_gap_aci.o
+ .debug_info    0x00024923     0x22d0 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_gatt_aci.o
+ .debug_info    0x00026bf3      0x726 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_hal_aci.o
+ .debug_info    0x00027319      0x19a ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_utils_small.o
+ .debug_info    0x000274b3     0x15d9 ./Middlewares/ST/BlueNRG-MS/hci/hci_le.o
+ .debug_info    0x00028a8c      0x8c6 ./Middlewares/ST/BlueNRG-MS/hci/hci_tl_patterns/Basic/hci_tl.o
+ .debug_info    0x00029352      0x70f ./Middlewares/ST/BlueNRG-MS/utils/ble_list.o
 
-.debug_abbrev   0x00000000     0x5b3a
+.debug_abbrev   0x00000000     0x5b3b
  .debug_abbrev  0x00000000      0x214 ./BlueNRG_MS/App/app_bluenrg_ms.o
  .debug_abbrev  0x00000214      0x2f7 ./BlueNRG_MS/App/sample_service.o
  .debug_abbrev  0x0000050b      0x2b8 ./BlueNRG_MS/Target/hci_tl_interface.o
  .debug_abbrev  0x000007c3      0x299 ./Core/Src/keypad.o
  .debug_abbrev  0x00000a5c      0x2cc ./Core/Src/lcd.o
  .debug_abbrev  0x00000d28      0x331 ./Core/Src/main.o
- .debug_abbrev  0x00001059      0x3c3 ./Core/Src/main_cpp.o
- .debug_abbrev  0x0000141c      0x25d ./Core/Src/servo.o
- .debug_abbrev  0x00001679      0x2a8 ./Core/Src/stm32l4xx_hal_msp.o
- .debug_abbrev  0x00001921      0x13f ./Core/Src/stm32l4xx_it.o
- .debug_abbrev  0x00001a60      0x1b6 ./Core/Src/syscalls.o
- .debug_abbrev  0x00001c16       0xbc ./Core/Src/sysmem.o
- .debug_abbrev  0x00001cd2      0x117 ./Core/Src/system_stm32l4xx.o
- .debug_abbrev  0x00001de9       0x24 ./Core/Startup/startup_stm32l475vgtx.o
- .debug_abbrev  0x00001e0d      0x341 ./Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1.o
- .debug_abbrev  0x0000214e      0x299 ./Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_bus.o
- .debug_abbrev  0x000023e7      0x243 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o
- .debug_abbrev  0x0000262a      0x31c ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o
- .debug_abbrev  0x00002946      0x28f ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dfsdm.o
- .debug_abbrev  0x00002bd5      0x1ae ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o
- .debug_abbrev  0x00002d83      0x1d1 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o
- .debug_abbrev  0x00002f54      0x285 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o
- .debug_abbrev  0x000031d9      0x1cb ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o
- .debug_abbrev  0x000033a4      0x2eb ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd.o
- .debug_abbrev  0x0000368f      0x25c ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd_ex.o
- .debug_abbrev  0x000038eb      0x1e5 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o
- .debug_abbrev  0x00003ad0      0x1f9 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o
- .debug_abbrev  0x00003cc9      0x2dc ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o
- .debug_abbrev  0x00003fa5      0x2a5 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o
- .debug_abbrev  0x0000424a      0x282 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.o
- .debug_abbrev  0x000044cc      0x289 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o
- .debug_abbrev  0x00004755      0x284 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o
- .debug_abbrev  0x000049d9      0x2f3 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o
- .debug_abbrev  0x00004ccc      0x2b1 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.o
- .debug_abbrev  0x00004f7d      0x1b7 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_gap_aci.o
- .debug_abbrev  0x00005134      0x1b9 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_gatt_aci.o
- .debug_abbrev  0x000052ed      0x147 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_hal_aci.o
- .debug_abbrev  0x00005434       0xbb ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_utils_small.o
- .debug_abbrev  0x000054ef      0x1dc ./Middlewares/ST/BlueNRG-MS/hci/hci_le.o
- .debug_abbrev  0x000056cb      0x2ce ./Middlewares/ST/BlueNRG-MS/hci/hci_tl_patterns/Basic/hci_tl.o
- .debug_abbrev  0x00005999      0x1a1 ./Middlewares/ST/BlueNRG-MS/utils/ble_list.o
+ .debug_abbrev  0x00001059      0x3c4 ./Core/Src/main_cpp.o
+ .debug_abbrev  0x0000141d      0x25d ./Core/Src/servo.o
+ .debug_abbrev  0x0000167a      0x2a8 ./Core/Src/stm32l4xx_hal_msp.o
+ .debug_abbrev  0x00001922      0x13f ./Core/Src/stm32l4xx_it.o
+ .debug_abbrev  0x00001a61      0x1b6 ./Core/Src/syscalls.o
+ .debug_abbrev  0x00001c17       0xbc ./Core/Src/sysmem.o
+ .debug_abbrev  0x00001cd3      0x117 ./Core/Src/system_stm32l4xx.o
+ .debug_abbrev  0x00001dea       0x24 ./Core/Startup/startup_stm32l475vgtx.o
+ .debug_abbrev  0x00001e0e      0x341 ./Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1.o
+ .debug_abbrev  0x0000214f      0x299 ./Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_bus.o
+ .debug_abbrev  0x000023e8      0x243 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o
+ .debug_abbrev  0x0000262b      0x31c ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o
+ .debug_abbrev  0x00002947      0x28f ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dfsdm.o
+ .debug_abbrev  0x00002bd6      0x1ae ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o
+ .debug_abbrev  0x00002d84      0x1d1 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o
+ .debug_abbrev  0x00002f55      0x285 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o
+ .debug_abbrev  0x000031da      0x1cb ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o
+ .debug_abbrev  0x000033a5      0x2eb ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd.o
+ .debug_abbrev  0x00003690      0x25c ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd_ex.o
+ .debug_abbrev  0x000038ec      0x1e5 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o
+ .debug_abbrev  0x00003ad1      0x1f9 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o
+ .debug_abbrev  0x00003cca      0x2dc ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o
+ .debug_abbrev  0x00003fa6      0x2a5 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o
+ .debug_abbrev  0x0000424b      0x282 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.o
+ .debug_abbrev  0x000044cd      0x289 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o
+ .debug_abbrev  0x00004756      0x284 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o
+ .debug_abbrev  0x000049da      0x2f3 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o
+ .debug_abbrev  0x00004ccd      0x2b1 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.o
+ .debug_abbrev  0x00004f7e      0x1b7 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_gap_aci.o
+ .debug_abbrev  0x00005135      0x1b9 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_gatt_aci.o
+ .debug_abbrev  0x000052ee      0x147 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_hal_aci.o
+ .debug_abbrev  0x00005435       0xbb ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_utils_small.o
+ .debug_abbrev  0x000054f0      0x1dc ./Middlewares/ST/BlueNRG-MS/hci/hci_le.o
+ .debug_abbrev  0x000056cc      0x2ce ./Middlewares/ST/BlueNRG-MS/hci/hci_tl_patterns/Basic/hci_tl.o
+ .debug_abbrev  0x0000599a      0x1a1 ./Middlewares/ST/BlueNRG-MS/utils/ble_list.o
 
 .debug_aranges  0x00000000     0x22d0
  .debug_aranges
@@ -9309,48 +9309,48 @@ LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.id
  .debug_macro   0x00031dfc      0x3c4 ./Middlewares/ST/BlueNRG-MS/hci/hci_tl_patterns/Basic/hci_tl.o
  .debug_macro   0x000321c0      0x317 ./Middlewares/ST/BlueNRG-MS/utils/ble_list.o
 
-.debug_line     0x00000000    0x2c573
+.debug_line     0x00000000    0x2c565
  .debug_line    0x00000000      0xd9b ./BlueNRG_MS/App/app_bluenrg_ms.o
  .debug_line    0x00000d9b      0xec7 ./BlueNRG_MS/App/sample_service.o
  .debug_line    0x00001c62      0xbf7 ./BlueNRG_MS/Target/hci_tl_interface.o
  .debug_line    0x00002859      0x8f4 ./Core/Src/keypad.o
- .debug_line    0x0000314d      0xa33 ./Core/Src/lcd.o
- .debug_line    0x00003b80      0xf35 ./Core/Src/main.o
- .debug_line    0x00004ab5      0xccc ./Core/Src/main_cpp.o
- .debug_line    0x00005781      0x8e7 ./Core/Src/servo.o
- .debug_line    0x00006068      0xae3 ./Core/Src/stm32l4xx_hal_msp.o
- .debug_line    0x00006b4b      0x945 ./Core/Src/stm32l4xx_it.o
- .debug_line    0x00007490      0x845 ./Core/Src/syscalls.o
- .debug_line    0x00007cd5      0x521 ./Core/Src/sysmem.o
- .debug_line    0x000081f6      0x852 ./Core/Src/system_stm32l4xx.o
- .debug_line    0x00008a48       0x7a ./Core/Startup/startup_stm32l475vgtx.o
- .debug_line    0x00008ac2      0xbcf ./Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1.o
- .debug_line    0x00009691      0x9bb ./Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_bus.o
- .debug_line    0x0000a04c      0xbba ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o
- .debug_line    0x0000ac06      0xd55 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o
- .debug_line    0x0000b95b     0x1ee3 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dfsdm.o
- .debug_line    0x0000d83e      0xb2a ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o
- .debug_line    0x0000e368      0xc0e ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o
- .debug_line    0x0000ef76     0x37c7 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o
- .debug_line    0x0001273d      0x91a ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o
- .debug_line    0x00013057     0x139b ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd.o
- .debug_line    0x000143f2      0x9ba ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd_ex.o
- .debug_line    0x00014dac      0x985 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o
- .debug_line    0x00015731      0xd6c ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o
- .debug_line    0x0001649d     0x110f ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o
- .debug_line    0x000175ac     0x15dd ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o
- .debug_line    0x00018b89     0x209a ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.o
- .debug_line    0x0001ac23     0x3f1e ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o
- .debug_line    0x0001eb41     0x1bf7 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o
- .debug_line    0x00020738     0x2ded ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o
- .debug_line    0x00023525     0x1827 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.o
- .debug_line    0x00024d4c     0x1814 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_gap_aci.o
- .debug_line    0x00026560     0x192f ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_gatt_aci.o
- .debug_line    0x00027e8f      0xdc7 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_hal_aci.o
- .debug_line    0x00028c56      0xbc1 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_utils_small.o
- .debug_line    0x00029817     0x12d5 ./Middlewares/ST/BlueNRG-MS/hci/hci_le.o
- .debug_line    0x0002aaec      0xd93 ./Middlewares/ST/BlueNRG-MS/hci/hci_tl_patterns/Basic/hci_tl.o
- .debug_line    0x0002b87f      0xcf4 ./Middlewares/ST/BlueNRG-MS/utils/ble_list.o
+ .debug_line    0x0000314d      0xa32 ./Core/Src/lcd.o
+ .debug_line    0x00003b7f      0xf35 ./Core/Src/main.o
+ .debug_line    0x00004ab4      0xcbf ./Core/Src/main_cpp.o
+ .debug_line    0x00005773      0x8e7 ./Core/Src/servo.o
+ .debug_line    0x0000605a      0xae3 ./Core/Src/stm32l4xx_hal_msp.o
+ .debug_line    0x00006b3d      0x945 ./Core/Src/stm32l4xx_it.o
+ .debug_line    0x00007482      0x845 ./Core/Src/syscalls.o
+ .debug_line    0x00007cc7      0x521 ./Core/Src/sysmem.o
+ .debug_line    0x000081e8      0x852 ./Core/Src/system_stm32l4xx.o
+ .debug_line    0x00008a3a       0x7a ./Core/Startup/startup_stm32l475vgtx.o
+ .debug_line    0x00008ab4      0xbcf ./Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1.o
+ .debug_line    0x00009683      0x9bb ./Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_bus.o
+ .debug_line    0x0000a03e      0xbba ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o
+ .debug_line    0x0000abf8      0xd55 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o
+ .debug_line    0x0000b94d     0x1ee3 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dfsdm.o
+ .debug_line    0x0000d830      0xb2a ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o
+ .debug_line    0x0000e35a      0xc0e ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o
+ .debug_line    0x0000ef68     0x37c7 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o
+ .debug_line    0x0001272f      0x91a ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o
+ .debug_line    0x00013049     0x139b ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd.o
+ .debug_line    0x000143e4      0x9ba ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pcd_ex.o
+ .debug_line    0x00014d9e      0x985 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o
+ .debug_line    0x00015723      0xd6c ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o
+ .debug_line    0x0001648f     0x110f ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o
+ .debug_line    0x0001759e     0x15dd ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o
+ .debug_line    0x00018b7b     0x209a ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.o
+ .debug_line    0x0001ac15     0x3f1e ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o
+ .debug_line    0x0001eb33     0x1bf7 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o
+ .debug_line    0x0002072a     0x2ded ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o
+ .debug_line    0x00023517     0x1827 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.o
+ .debug_line    0x00024d3e     0x1814 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_gap_aci.o
+ .debug_line    0x00026552     0x192f ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_gatt_aci.o
+ .debug_line    0x00027e81      0xdc7 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_hal_aci.o
+ .debug_line    0x00028c48      0xbc1 ./Middlewares/ST/BlueNRG-MS/hci/controller/bluenrg_utils_small.o
+ .debug_line    0x00029809     0x12d5 ./Middlewares/ST/BlueNRG-MS/hci/hci_le.o
+ .debug_line    0x0002aade      0xd93 ./Middlewares/ST/BlueNRG-MS/hci/hci_tl_patterns/Basic/hci_tl.o
+ .debug_line    0x0002b871      0xcf4 ./Middlewares/ST/BlueNRG-MS/utils/ble_list.o
 
 .debug_str      0x00000000   0x10c879
  .debug_str     0x00000000   0x10c879 ./BlueNRG_MS/App/app_bluenrg_ms.o

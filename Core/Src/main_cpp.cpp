@@ -55,30 +55,6 @@ extern "C" void main_cpp_loop(void) {
 	        else if (key == '0') myServo.TurnShaft(SERVO_MIDPOSITION);
 	        else if (key == '9') myServo.TurnShaft(SERVO_RIGHTPOSITION);
 	    }
-
-	    // 3. Bluetooth працює через receiveData (переривання),
-	    // тому він не має бути в loop, але loop не повинен його гальмувати.
-
-//    if (ble_command_received) {
-//        uint8_t cmd = last_cmd;
-//        ble_command_received = 0;
-//
-//        lcd.Clear();
-//        lcd.SetCursor(0, 0);
-//        lcd.Print("Last Cmd:");
-//        lcd.SetCursor(1, 0);
-//        lcd.Print((char)cmd);
-//
-//        if (cmd == 'L') {
-//        	myServo.TurnShaft(SERVO_LEFTPOSITION);
-//        }
-//        else if (cmd == 'M') {
-//        	myServo.TurnShaft(SERVO_MIDPOSITION);
-//        }
-//        else if (cmd == 'R'){
-//            myServo.TurnShaft(SERVO_RIGHTPOSITION);
-//        }
-//    }
 }
 extern "C" void receiveData(uint8_t* data_buffer, uint8_t Nb_bytes)
 {
@@ -97,13 +73,3 @@ extern "C" void receiveData(uint8_t* data_buffer, uint8_t Nb_bytes)
 
     }
 }
-//extern "C" void receiveData(uint8_t* data_buffer, uint8_t Nb_bytes)
-//{
-//    for (int i = 0; i < Nb_bytes; i++) {
-//        if (data_buffer[i] == 'L' || data_buffer[i] == 'R' || data_buffer[i] == 'M') {
-//            last_cmd = data_buffer[i];
-//            ble_command_received = 1;
-//            break;
-//        }
-//    }
-//}

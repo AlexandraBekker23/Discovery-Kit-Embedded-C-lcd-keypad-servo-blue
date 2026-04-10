@@ -21,15 +21,8 @@ struct pinStruct_t {
 class Keypad {
 	private:
 		pinStruct_t* rows;
-		//int row_num;
 		pinStruct_t* cols;
-		//int col_num;
-//		char keys[4][3] = {
-//			{'1', '2', '3'},
-//			{'4', '5', '6'},
-//			{'7', '8', '9'},
-//			{'*', '0', '#'}
-//		};
+
 	public:
 		Keypad(pinStruct_t* rPins, pinStruct_t* cPins);
 		char GetKey(void);
