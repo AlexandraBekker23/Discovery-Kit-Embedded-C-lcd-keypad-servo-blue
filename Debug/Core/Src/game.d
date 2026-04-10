@@ -1,5 +1,6 @@
-Core/Src/main_cpp.o: ../Core/Src/main_cpp.cpp ../Core/Inc/servo.hpp \
- ../Core/Inc/main.h ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
+Core/Src/game.o: ../Core/Src/game.cpp ../Core/Inc/game.hpp \
+ ../Core/Inc/keypad.hpp \
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
  ../Core/Inc/stm32l4xx_hal_conf.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h \
@@ -36,15 +37,9 @@ Core/Src/main_cpp.o: ../Core/Src/main_cpp.cpp ../Core/Inc/servo.hpp \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
- ../BlueNRG_MS/Target/hci_tl_interface.h \
- ../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_bus.h \
- ../Core/Inc/b_l475e_iot01a1_conf.h \
- ../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_errno.h \
- ../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1.h ../Core/Inc/main.h \
- ../Core/Inc/main_cpp.hpp ../Core/Inc/lcd.hpp ../Core/Inc/keypad.hpp \
- ../Core/Inc/game.hpp ../Core/Inc/keypad.hpp ../Core/Inc/lcd.hpp
-../Core/Inc/servo.hpp:
-../Core/Inc/main.h:
+ ../Core/Inc/lcd.hpp
+../Core/Inc/game.hpp:
+../Core/Inc/keypad.hpp:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../Core/Inc/stm32l4xx_hal_conf.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h:
@@ -82,15 +77,4 @@ Core/Src/main_cpp.o: ../Core/Src/main_cpp.cpp ../Core/Inc/servo.hpp \
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h:
-../BlueNRG_MS/Target/hci_tl_interface.h:
-../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_bus.h:
-../Core/Inc/b_l475e_iot01a1_conf.h:
-../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_errno.h:
-../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1.h:
-../Core/Inc/main.h:
-../Core/Inc/main_cpp.hpp:
-../Core/Inc/lcd.hpp:
-../Core/Inc/keypad.hpp:
-../Core/Inc/game.hpp:
-../Core/Inc/keypad.hpp:
 ../Core/Inc/lcd.hpp:

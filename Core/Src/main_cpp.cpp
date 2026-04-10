@@ -2,6 +2,7 @@
 #include "main_cpp.hpp"
 #include "lcd.hpp"
 #include "keypad.hpp"
+#include "game.hpp"
 #include <cstdio>
 
 
@@ -30,6 +31,7 @@ pinStruct_t colPins[] = {
 };
 
 Keypad keypad(rowPins, colPins);
+SafeGame game(keypad, lcd);
 
 extern "C" void main_cpp_init(void) {
     myServo.Start();
@@ -45,15 +47,19 @@ extern "C" void main_cpp_loop(void) {
 	    char key = keypad.GetKey();
 
 	    if (key != 0) {
-	        lcd.Clear();
-	        lcd.SetCursor(0, 0);
-	        lcd.Print("Key Pressed:");
-	        lcd.SetCursor(1, 0);
-	        lcd.Print(key);
+	    	if(key == '*') {
+	    		game.Play();
+	    	} else {
+	    		lcd.Clear();
+	    		lcd.SetCursor(0, 0);
+	    		lcd.Print("Key Pressed:");
+	    		lcd.SetCursor(1, 0);
+	    		lcd.Print(key);
 
-	        if (key == '7') myServo.TurnShaft(SERVO_LEFTPOSITION);
-	        else if (key == '0') myServo.TurnShaft(SERVO_MIDPOSITION);
-	        else if (key == '9') myServo.TurnShaft(SERVO_RIGHTPOSITION);
+	    		if (key == '7') myServo.TurnShaft(SERVO_LEFTPOSITION);
+	    		else if (key == '0') myServo.TurnShaft(SERVO_MIDPOSITION);
+	    		else if (key == '9') myServo.TurnShaft(SERVO_RIGHTPOSITION);
+	    	}
 	    }
 }
 extern "C" void receiveData(uint8_t* data_buffer, uint8_t Nb_bytes)
