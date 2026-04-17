@@ -11,6 +11,7 @@
 
 #include "keypad.hpp"
 #include "lcd.hpp"
+#include "servo.hpp"
 
 #define CODE_LENGTH 2
 
@@ -18,6 +19,7 @@ class SafeGame {
 private:
     Keypad& keypad;
     LCD& lcd;
+    Servo& servo;
 
     char secretCode[CODE_LENGTH + 1];
     char userGuess[CODE_LENGTH + 1];
@@ -27,7 +29,7 @@ private:
     int CountCows();
 
 public:
-    SafeGame(Keypad& k, LCD& l);
+    SafeGame(Keypad& k, LCD& l, Servo& s);
     void Play();
 };
 

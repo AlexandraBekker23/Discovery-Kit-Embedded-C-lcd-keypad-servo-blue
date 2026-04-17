@@ -74,10 +74,10 @@ void Error_Handler(void);
 #define SPBTLE_RF_IRQ_EXTI6_GPIO_Port GPIOE
 #define SPBTLE_RF_IRQ_EXTI6_EXTI_IRQn EXTI9_5_IRQn
 #define BSP_BUTTON_EXTI_IRQn EXTI15_10_IRQn
-#define ARD_A5_Pin GPIO_PIN_0
-#define ARD_A5_GPIO_Port GPIOC
-#define ARD_A4_Pin GPIO_PIN_1
-#define ARD_A4_GPIO_Port GPIOC
+#define KEYPAD_R3_Pin GPIO_PIN_0
+#define KEYPAD_R3_GPIO_Port GPIOC
+#define KEYPAD_R1_Pin GPIO_PIN_1
+#define KEYPAD_R1_GPIO_Port GPIOC
 #define KEYPAD_C4_Pin GPIO_PIN_2
 #define KEYPAD_C4_GPIO_Port GPIOC
 #define KEYPAD_C3_Pin GPIO_PIN_3
@@ -86,8 +86,8 @@ void Error_Handler(void);
 #define ARD_D1_GPIO_Port GPIOA
 #define ARD_D0_Pin GPIO_PIN_1
 #define ARD_D0_GPIO_Port GPIOA
-#define KEYPAD_R1_Pin GPIO_PIN_2
-#define KEYPAD_R1_GPIO_Port GPIOA
+#define TIM2_CH3_HCSR04_Pin GPIO_PIN_2
+#define TIM2_CH3_HCSR04_GPIO_Port GPIOA
 #define KEYPAD_R2_Pin GPIO_PIN_3
 #define KEYPAD_R2_GPIO_Port GPIOA
 #define ARD_D7_Pin GPIO_PIN_4
@@ -104,8 +104,6 @@ void Error_Handler(void);
 #define KEYPAD_R4_GPIO_Port GPIOC
 #define KEYPAD_C2_Pin GPIO_PIN_0
 #define KEYPAD_C2_GPIO_Port GPIOB
-#define KEYPAD_R3_Pin GPIO_PIN_1
-#define KEYPAD_R3_GPIO_Port GPIOB
 #define ARD_D8_Pin GPIO_PIN_2
 #define ARD_D8_GPIO_Port GPIOB
 #define DFSDM1_DATIN2_Pin GPIO_PIN_7
@@ -162,12 +160,8 @@ void Error_Handler(void);
 #define VL53L0X_GPIO1_EXTI7_EXTI_IRQn EXTI9_5_IRQn
 #define LED3_WIFI__LED4_BLE_Pin GPIO_PIN_9
 #define LED3_WIFI__LED4_BLE_GPIO_Port GPIOC
-#define SPBTLE_RF_RST_Pin GPIO_PIN_8
-#define SPBTLE_RF_RST_GPIO_Port GPIOA
 #define USB_OTG_FS_VBUS_Pin GPIO_PIN_9
 #define USB_OTG_FS_VBUS_GPIO_Port GPIOA
-#define USB_OTG_FS_ID_Pin GPIO_PIN_10
-#define USB_OTG_FS_ID_GPIO_Port GPIOA
 #define USB_OTG_FS_DM_Pin GPIO_PIN_11
 #define USB_OTG_FS_DM_GPIO_Port GPIOA
 #define USB_OTG_FS_DP_Pin GPIO_PIN_12
@@ -176,8 +170,8 @@ void Error_Handler(void);
 #define SYS_JTMS_SWDIO_GPIO_Port GPIOA
 #define SYS_JTCK_SWCLK_Pin GPIO_PIN_14
 #define SYS_JTCK_SWCLK_GPIO_Port GPIOA
-#define ARD_D9_Pin GPIO_PIN_15
-#define ARD_D9_GPIO_Port GPIOA
+#define TIM2_CH1_HCSR04_Pin GPIO_PIN_15
+#define TIM2_CH1_HCSR04_GPIO_Port GPIOA
 #define INTERNAL_SPI3_SCK_Pin GPIO_PIN_10
 #define INTERNAL_SPI3_SCK_GPIO_Port GPIOC
 #define INTERNAL_SPI3_MISO_Pin GPIO_PIN_11
@@ -200,8 +194,6 @@ void Error_Handler(void);
 #define PMOD_UART2_RX_GPIO_Port GPIOD
 #define STSAFE_A100_RESET_Pin GPIO_PIN_7
 #define STSAFE_A100_RESET_GPIO_Port GPIOD
-#define SYS_JTD0_SWO_Pin GPIO_PIN_3
-#define SYS_JTD0_SWO_GPIO_Port GPIOB
 #define ARD_D5_Pin GPIO_PIN_4
 #define ARD_D5_GPIO_Port GPIOB
 #define SPSGRF_915_SPI3_CSN_Pin GPIO_PIN_5

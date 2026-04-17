@@ -1,6 +1,5 @@
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.o: \
- ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.c \
- ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
+Core/Src/hcsr04.o: ../Core/Src/hcsr04.cpp ../Core/Inc/hcsr04.hpp \
+ ../Core/Inc/main.h ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
  ../Core/Inc/stm32l4xx_hal_conf.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h \
@@ -26,9 +25,6 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.o: \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h \
- ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd.h \
- ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_usb.h \
- ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi.h \
@@ -36,7 +32,14 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.o: \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
- ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
+ ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
+ ../BlueNRG_MS/Target/hci_tl_interface.h \
+ ../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_bus.h \
+ ../Core/Inc/b_l475e_iot01a1_conf.h \
+ ../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_errno.h \
+ ../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1.h ../Core/Inc/main.h
+../Core/Inc/hcsr04.hpp:
+../Core/Inc/main.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../Core/Inc/stm32l4xx_hal_conf.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h:
@@ -63,9 +66,6 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.o: \
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h:
-../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd.h:
-../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_usb.h:
-../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi.h:
@@ -74,3 +74,9 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usb.o: \
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h:
+../BlueNRG_MS/Target/hci_tl_interface.h:
+../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_bus.h:
+../Core/Inc/b_l475e_iot01a1_conf.h:
+../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_errno.h:
+../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1.h:
+../Core/Inc/main.h:

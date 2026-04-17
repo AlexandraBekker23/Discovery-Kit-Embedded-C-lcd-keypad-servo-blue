@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <cstdlib>
 
-SafeGame::SafeGame(Keypad& k, LCD& l) : keypad(k), lcd(l) {}
+SafeGame::SafeGame(Keypad& k, LCD& l, Servo& s) : keypad(k), lcd(l), servo(s) {}
 
 void SafeGame::GenerateCode() {
 
@@ -69,7 +69,12 @@ void SafeGame::Play() {
         lcd.Clear();
         if(b == CODE_LENGTH) {
             lcd.Print("WIN! Open!");
-            HAL_Delay(3000);
+            servo.TurnShaft(SERVO_RIGHTPOSITION);
+            HAL_Delay(500);
+            servo.TurnShaft(SERVO_MIDPOSITION);
+            HAL_Delay(500);
+            servo.TurnShaft(SERVO_LEFTPOSITION);
+            HAL_Delay(2000);
             return;
         } else {
             char buf[16];

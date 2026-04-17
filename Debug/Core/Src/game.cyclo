@@ -1,4 +1,4 @@
-../Core/Src/game.cpp:12:1:SafeGame::SafeGame(Keypad&, LCD&)	1
+../Core/Src/game.cpp:12:1:SafeGame::SafeGame(Keypad&, LCD&, Servo&)	1
 ../Core/Src/game.cpp:14:6:void SafeGame::GenerateCode()	2
 ../Core/Src/game.cpp:25:5:int SafeGame::CountBulls()	3
 ../Core/Src/game.cpp:33:5:int SafeGame::CountCows()	5
