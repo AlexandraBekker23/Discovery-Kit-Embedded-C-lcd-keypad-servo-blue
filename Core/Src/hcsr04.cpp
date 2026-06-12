@@ -16,15 +16,14 @@ void HCSR04::Start() {
 
 
 uint32_t HCSR04::GetDistance(void) {
-    if(__HAL_TIM_GET_FLAG(htim, TIM_FLAG_CC1)) {
+	if (__HAL_TIM_GET_FLAG(htim, TIM_FLAG_CC1)) {
+	        uint32_t pulseWidth = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);
+	        __HAL_TIM_CLEAR_FLAG(htim, TIM_FLAG_CC1);
 
-        uint32_t pulseWidth = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);
-
-        if (pulseWidth > 0) {
-            distanceCM = pulseWidth / 58;
-        }
-        __HAL_TIM_CLEAR_FLAG(htim, TIM_FLAG_CC1);
-    }
+	        if (pulseWidth > 0 && pulseWidth < 25000) {
+	            distanceCM = pulseWidth / 58;
+	        }
+	    }
     return distanceCM;
 }
 

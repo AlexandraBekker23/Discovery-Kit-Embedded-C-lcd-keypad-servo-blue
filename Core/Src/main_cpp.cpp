@@ -4,6 +4,8 @@
 #include "keypad.hpp"
 #include "game.hpp"
 #include "hcsr04.hpp"
+#include "motor.hpp"
+#include "main.h"
 #include "cstdio"
 
 
@@ -14,6 +16,7 @@ extern "C" {
     extern TIM_HandleTypeDef htim4;
     extern I2C_HandleTypeDef hi2c1;
     extern TIM_HandleTypeDef htim2;
+    extern TIM_HandleTypeDef htim3;
 }
 
 Servo myServo(&htim4, TIM_CHANNEL_3);
@@ -38,6 +41,10 @@ SafeGame game(keypad, lcd, myServo);
 
 static HCSR04 sonar(&htim2);
 
+Motor myMotor(&htim3, TIM_CHANNEL_4,
+        MOTOR_IN1_GPIO_Port, MOTOR_IN1_Pin,
+        MOTOR_IN2_GPIO_Port, MOTOR_IN2_Pin);
+
 extern "C" void main_cpp_init(void) {
     myServo.Start();
     myServo.TurnShaft(SERVO_MIDPOSITION);
@@ -51,18 +58,23 @@ extern "C" void main_cpp_init(void) {
 extern "C" void main_cpp_loop(void) {
 
 	char key = keypad.GetKey();
+	static bool measuring = false;
 
     if (key != 0) {
     	if(key == '*') {
+    		measuring = false;
     		game.Play();
     	} else if(key == '#') {
-    	    uint32_t dist = sonar.GetDistance();
-    	    lcd.Clear();
-    	    lcd.SetCursor(0, 0);
-    	    lcd.Print("Dist: ");
-    	    lcd.Print(dist);
-    	    lcd.Print(" cm ");
+    		//while(key == '#') {
+    		measuring = !measuring;
+    		if (!measuring){
+    			lcd.Clear();
+    		    lcd.Print("System Ready");
+    		}
+
+    		//}
     	} else {
+    		measuring = false;
     		lcd.Clear();
     		lcd.SetCursor(0, 0);
     		lcd.Print("Key Pressed:");
@@ -73,6 +85,19 @@ extern "C" void main_cpp_loop(void) {
     		else if (key == '9') myServo.TurnShaft(SERVO_RIGHTPOSITION);
     	}
     }
+    if(measuring){
+	    uint32_t dist = sonar.GetDistance();
+	    lcd.Clear();
+	    lcd.SetCursor(0, 0);
+	    lcd.Print("Dist: ");
+	    lcd.Print(dist);
+	    lcd.Print(" cm ");
+    }
+
+    myMotor.MoveForward(MOTOR_QUARTERSPEED);
+    HAL_Delay(3000);
+    myMotor.Stop();
+    HAL_Delay(1000);
 }
 
 extern "C" void receiveData(uint8_t* data_buffer, uint8_t Nb_bytes)

@@ -1,4 +1,4 @@
-Core/Src/main_cpp.o: ../Core/Src/main_cpp.cpp ../Core/Inc/servo.hpp \
+Core/Src/motor.o: ../Core/Src/motor.cpp ../Core/Inc/motor.hpp \
  ../Core/Inc/main.h ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
  ../Core/Inc/stm32l4xx_hal_conf.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h \
@@ -37,11 +37,8 @@ Core/Src/main_cpp.o: ../Core/Src/main_cpp.cpp ../Core/Inc/servo.hpp \
  ../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_bus.h \
  ../Core/Inc/b_l475e_iot01a1_conf.h \
  ../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_errno.h \
- ../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1.h ../Core/Inc/main.h \
- ../Core/Inc/main_cpp.hpp ../Core/Inc/lcd.hpp ../Core/Inc/keypad.hpp \
- ../Core/Inc/game.hpp ../Core/Inc/keypad.hpp ../Core/Inc/lcd.hpp \
- ../Core/Inc/servo.hpp ../Core/Inc/hcsr04.hpp ../Core/Inc/motor.hpp
-../Core/Inc/servo.hpp:
+ ../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1.h ../Core/Inc/main.h
+../Core/Inc/motor.hpp:
 ../Core/Inc/main.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../Core/Inc/stm32l4xx_hal_conf.h:
@@ -83,12 +80,3 @@ Core/Src/main_cpp.o: ../Core/Src/main_cpp.cpp ../Core/Inc/servo.hpp \
 ../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1_errno.h:
 ../Drivers/BSP/B-L475E-IOT01A1/b_l475e_iot01a1.h:
 ../Core/Inc/main.h:
-../Core/Inc/main_cpp.hpp:
-../Core/Inc/lcd.hpp:
-../Core/Inc/keypad.hpp:
-../Core/Inc/game.hpp:
-../Core/Inc/keypad.hpp:
-../Core/Inc/lcd.hpp:
-../Core/Inc/servo.hpp:
-../Core/Inc/hcsr04.hpp:
-../Core/Inc/motor.hpp:

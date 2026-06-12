@@ -90,8 +90,8 @@ void Error_Handler(void);
 #define TIM2_CH3_HCSR04_GPIO_Port GPIOA
 #define KEYPAD_R2_Pin GPIO_PIN_3
 #define KEYPAD_R2_GPIO_Port GPIOA
-#define ARD_D7_Pin GPIO_PIN_4
-#define ARD_D7_GPIO_Port GPIOA
+#define MOTOR_IN1_Pin GPIO_PIN_4
+#define MOTOR_IN1_GPIO_Port GPIOA
 #define ARD_D13_Pin GPIO_PIN_5
 #define ARD_D13_GPIO_Port GPIOA
 #define ARD_D12_Pin GPIO_PIN_6
@@ -104,8 +104,10 @@ void Error_Handler(void);
 #define KEYPAD_R4_GPIO_Port GPIOC
 #define KEYPAD_C2_Pin GPIO_PIN_0
 #define KEYPAD_C2_GPIO_Port GPIOB
-#define ARD_D8_Pin GPIO_PIN_2
-#define ARD_D8_GPIO_Port GPIOB
+#define MOTOR_TIM3_CH4_Pin GPIO_PIN_1
+#define MOTOR_TIM3_CH4_GPIO_Port GPIOB
+#define MOTOR_IN2_Pin GPIO_PIN_2
+#define MOTOR_IN2_GPIO_Port GPIOB
 #define DFSDM1_DATIN2_Pin GPIO_PIN_7
 #define DFSDM1_DATIN2_GPIO_Port GPIOE
 #define ISM43362_RST_Pin GPIO_PIN_8
